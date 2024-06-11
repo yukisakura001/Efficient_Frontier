@@ -62,7 +62,7 @@ def beta(datam,nikkei_df,s,e):
     fig.update_layout(
         plot_bgcolor='black',
         hovermode='x',
-        width=800,
+        #width=800,
         height=500,
         legend=dict(xanchor='left',
                 yanchor='bottom',
@@ -71,5 +71,6 @@ def beta(datam,nikkei_df,s,e):
                 orientation='h',
                 )
         )
+    fig.update_layout(height=600)
     return fig,'%.3f' %model_lr.coef_
     #print('%.3f' %model_lr.coef_)
